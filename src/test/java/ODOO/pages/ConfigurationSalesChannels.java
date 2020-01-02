@@ -17,7 +17,7 @@ public class ConfigurationSalesChannels extends BasePage {
 
     @FindBy(xpath = "(//button[contains(text(),'Save')])[1]")
     public WebElement save_btn;
-
+//i
     @FindBy(name = "name")
     public WebElement salesTeamName;
 
