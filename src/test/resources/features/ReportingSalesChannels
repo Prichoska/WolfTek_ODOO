@@ -1,0 +1,15 @@
+Feature: Reporting Sales Channels
+  Background: login
+    Given user is on login page for ERP brite
+    When user login with username "eventscrmmanager34@info.com" and  password "eventscrmmanager"
+    Then verify page title is "#Inbox - Odoo"
+    And user clicks on the "CRM module"
+
+  Scenario: Create Sales Channel functionality
+    Given user clicks on the "Sales Channels"
+    When user clicks on the "Search"
+    And user enters "Alex" name
+    And user clicks "enter"
+    Then verify title is "Alex"
+
+
